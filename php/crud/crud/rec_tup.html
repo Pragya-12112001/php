@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <script>
+let obj={
+        a:1,
+        b:2
+};
+document.write(obj.a+ "<br>");
+Object.freeze(obj);
+obj.a=20;//wont work
+document.write("prints value of a"+obj.a +"<br>");
+let z={ p:17,b:14};
+obj=z;
+obj.a=z.p;
+document.write("new value in obj"+obj.a);
+// abc(obj);
+// function abc(x){
+   
+   //     // document.write(x);
+   //     document.write(typeof(x)+"<br>");
+   //     document.write(x.a+"<br>"); 
+   //     x.a=700;
+   //    document.write(x.a+"<br>");
+   //     // x={
+   //     //     a:77,
+   //     //     b:78
+   //     // };
+   //     // document.write(x.a);
+   //     document.write(typeof(x));
+   // }
+   </script>
+    </body>
+</html>
